@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Air Zoom Landing Page - SAIM</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="shapes-container">
+        <div class="sphere"></div>
+        <div class="sphere"></div>
+        <div class="sphere"></div>
+        <div class="sphere"></div>
+    </div>
+
+    <nav>
+        <div id="brandname">Nike</div>
+        <ul>
+            <li>Home</li>
+            <li class="show-all-reviews">Reviews</li>
+            <li>Contact</li>
+        </ul>
+        <button class="cta">Buy Now</button>
+        <div class="mobile-menu">
+            <p>Menu</p>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Nike Air Zoom <span class="subtext">Crossover</span></h1>
+            <p>We’re serving up the Air Zoom with a new look. <br> The coveted Tinker Hatfield design is back with
+                triple the flavor <br>—its matte and signature glossy patent leathers are sweetened with pops of Velvet
+                Brown, Sail, and soft pink Atmosphere.</p>
+            <div class="cta">
+                <a href="https://www.nike.com/t/air-zoom-crossover-big-kids-basketball-shoes-fRd149"><button>Learn
+                        More<span>&gt;</span></button></a>
+                <a href="#"> <button>Buy Now<span>&gt;</span></button></a>
+            </div>
+        </section>
+
+        <figure>
+            <img src="media/shoes.jpg" alt="Shoes" width="500px">
+        </figure>
+
+        <!-- Reviews Section -->
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="review">
+                <div class="review-header">
+                    <img src="/media/man.png" alt="User Avatar" class="avatar">
+                    <div class="user-info">
+                        <h3>Billie Eilish</h3>
+                        <span class="date">November 13, 2023</span>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "I absolutely love my Nike Air Zoom Crossover! The design is stylish, and the comfort is unmatched.
+                    Highly recommended!"
+                </p>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <img src="/media/man2.png" alt="User Avatar" class="avatar">
+                    <div class="user-info">
+                        <h3>Talha Anjum</h3>
+                        <span class="date">November 3, 2023</span>
+                    </div>
+                </div>
+
+                <p class="review-text">
+                    "I absolutely love my Nike Air Zoom Crossover! The design is stylish, and the comfort is unmatched.
+                    Highly recommended!"
+                </p>
+            </div>
+            <div class="review">
+                <div class="review-header">
+                    <img src="/media/man3.png" alt="User Avatar" class="avatar">
+                    <div class="user-info">
+                        <h3>KR$NA</h3>
+                        <span class="date">November 23, 2023</span>
+                    </div>
+                </div>
+
+                <p class="review-text">
+                    "I absolutely love my Nike Air Zoom Crossover! The design is stylish, and the comfort is unmatched.
+                    Highly recommended!"
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div id="brandname">Nike</div>
+        <ul>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>&copy; 2023 Nike</li>
+        </ul>
+    </footer>
+
+    <script>
+        document.querySelector('.show-all-reviews').addEventListener('click', function () {
+            document.getElementById('reviews-screen').style.display = 'block';
+            document.getElementById('reviews-screen').scrollIntoView({ behavior: 'smooth' });
+        });
+        document.querySelector('.show-all-reviews').addEventListener('click', function () {
+            document.getElementById('reviews-screen').style.display = 'block';
+            document.getElementById('reviews-screen').scrollIntoView({ behavior: 'smooth' });
+        });
+
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+#brandname {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1vh;
+}
+
+nav ul li {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+nav .cta {
+    color: #fff;
+    border: none;
+    background-color: plum;
+    padding: 6px 20px;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+img {
+    width: 500px;
+    z-index: -3;
+
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #5f3a74;
+
+}
+
+.subtext {
+    color: #509daf;
+}
+
+section p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #5f3a74;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+section button {
+    background-color: transparent;
+    border: none;
+    color: #ff7700;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: 'Poppins', cursive;
+    transition: color 0.3s ease, text-shadow 0.5s;
+}
+
+nav button:hover {
+    color: #5f3a74;
+    text-shadow: 0 0 5px #b180ff;
+    background-color: #b180ff;
+    border: solid 1px #b180ff;
+
+}
+
+section button:hover {
+    color: #ffb16c;
+    text-decoration: underline;
+    text-shadow: 0 0 1px #ffbb80;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
+
+button span {
+    font-size: 1rem;
+}
+
+nav ul {
+    transition: transform 0.8s ease;
+}
+
+@media screen and (max-width:700px) {
+
+    nav ul,
+    nav button {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 350px;
+    }
+
+    .sphere:nth-child(1) {
+        display: none;
+
+    }
+
+    .sphere:nth-child(2) {
+        display: none;
+
+    }
+
+    .sphere:nth-child(3) {
+        display: none;
+    }
+
+    .sphere:nth-child(4) {
+        display: none;
+    }
+}
+
+
+
+.shapes-container {
+    position: relative;
+}
+
+.sphere {
+    position: absolute;
+    border-radius: 50%;
+    animation: vibration 2s infinite, scaling 2s infinite alternate;
+}
+
+.sphere:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    background-color: #ff7700;
+    top: 250px;
+    left: 4%;
+    z-index: -1;
+}
+
+.sphere:nth-child(2) {
+    width: 530px;
+    height: 530px;
+    background-color: #5f3a74;
+    top: 660px;
+    left: 70%;
+}
+
+.sphere:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    background-color: #509daf;
+    top: 46rem;
+    left: -1%;
+    z-index: -1;
+}
+
+.sphere:nth-child(4) {
+    width: 250px;
+    height: 250px;
+    background-color: #ff7700;
+    top: -25px;
+    right: -5%;
+    z-index: -2;
+}
+
+@keyframes vibration {
+    0% {
+        transform: translate(-2px, -2px);
+    }
+
+    50% {
+        transform: translate(2px, 2px);
+    }
+
+    100% {
+        transform: translate(-2px, -2px);
+    }
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+
+nav ul:hover {
+    background-color: #b180ff;
+    border: solid 1px #b180ff;
+    border-radius: 17px;
+    padding: 5px;
+    box-shadow: 2px 2px 15px #b180ff;
+    transform: scale(1.2);
+    color: white;
+}
+
+
+#reviews {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%; 
+    max-width: 500px; 
+    z-index: 2;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    z-index: 1;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.date {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.review-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+#reviews-screen {
+    display: none; 
+}
+
+#reviews-screen h2 {
+    text-align: center;
+}
+
+.all-reviews-container {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+#reviews-screen .review {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+footer {
+    background-color: plum;
+    color: #fff;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    border-radius: 25px;
+    height: 20px;
+    z-index: 2; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1vh;
+    margin-right: 2rem;
+}
+
+footer ul li {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+footer #brandname {
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    color: #fff;
+}
+
+footer ul:hover {
+    background-color: #ff7700;
+    border: solid 1px #974700;
+    border-radius: 17px;
+    padding: 5px;
+    box-shadow: 2px 2px 15px #ff7700;
+    transform: scale(5);
+    color: white;
+    text-decoration: underline;
+    transform: translateY(-50%);
+}
